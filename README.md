@@ -23,3 +23,11 @@ Create a new file: **index.js** in the root directory.
     app.listen(2345, function() {
       console.log('Listening at localhost:2345');
     })
+
+## Step 3: Add stub API paths for 'Products'
+
+### Part 1: GET handler for 'localhost:2345/api/products'
+
+    app.get('/api/products', function(req, res) {
+      res.send('Display all the products');
+    });
